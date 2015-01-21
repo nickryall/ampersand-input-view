@@ -31,6 +31,10 @@ module.exports = View.extend({
             type: 'text',
             hook: 'message-text'
         },
+        'help': {
+            type: 'text',
+            hook: 'help-text'
+        },
         'showMessage': {
             type: 'toggle',
             hook: 'message-container'
@@ -82,6 +86,7 @@ module.exports = View.extend({
         directlyEdited: ['boolean', true, false],
         shouldValidate: ['boolean', true, false],
         message: ['string', true, ''],
+        help: ['string', true, ''],
         requiredMessage: ['string', true, 'This field is required.'],
         validClass: ['string', true, 'input-valid'],
         invalidClass: ['string', true, 'input-invalid'],
